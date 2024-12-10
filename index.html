@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="login-container">
+        <img src="https://media.istockphoto.com/id/1139724620/es/vector/icono-de-candado-blanco-en-el-bot%C3%B3n-de-seguridad-de-signo-de-seguridad-de-c%C3%ADrculo-azul.jpg?s=170667a&w=0&k=20&c=MaCxbcmty51vYVpFhIqJFb0z89xaGMuoTtHUHVa8vnY=" height="60" width="65">
+        <p>Login</p>
+        <hr>
+        <form>
+            <input type="text" placeholder="Usuario *" required>
+            <div class="password-container">
+                <input type="password" placeholder="Contraseña *" required>
+                <span class="toggle-password">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24" fill="#888"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 4.5c-7.33 0-11 5.82-11 7.5s3.67 7.5 11 7.5 11-5.82 11-7.5-3.67-7.5-11-7.5zm0 13c-4.71 0-7.83-3.12-9-5.5 1.17-2.38 4.29-5.5 9-5.5s7.83 3.12 9 5.5c-1.17 2.38-4.29 5.5-9 5.5zm0-10.5c-2.48 0-4.5 2.02-4.5 4.5s2.02 4.5 4.5 4.5 4.5-2.02 4.5-4.5-2.02-4.5-4.5-4.5zm0 7c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                </span>
+            </div>
+            <button type="submit">🗝️ENTRAR</button>
+        </form>
+        <br>
+        <div class="links">
+            <a href="#">Crear una Cuenta</a>
+            <a href="#">Recuperar Cuenta</a>
+        </div>
+    </div>
+
+    <script>
+        const togglePassword = document.querySelector('.toggle-password');
+        const passwordInput = document.querySelector('.password-container input');
+
+        togglePassword.addEventListener('click', () => {
+            const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+            passwordInput.setAttribute('type', type);
+        });
+    </script> 
+    </form>
+    </div>
+</body>
+</html>
